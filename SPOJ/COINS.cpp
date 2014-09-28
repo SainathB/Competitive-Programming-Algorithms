@@ -1,29 +1,32 @@
 #include <bits/stdc++.h>
-#define gi(x) scanf("%d",&x)
+#define gi(x) scanf("%lld",&x)
 using namespace std;
-vector<int> mark(1000000005,-1);
-int max(int n)
+long long maxlimit=1000000;
+vector<long long> mark(maxlimit,-1);
+long long max(long long n)
 {
-	if(mark[n]!=-1)
+	if(n<maxlimit && mark[n]!=-1)
 		return mark[n];
 	if(n==0)
 		return n;
-	int k=max(n/2)+max(n/3)+max(n/4);
+	long long k=max(n/2)+max(n/3)+max(n/4);
 	//printf("%d\n",k);
 	if(n>=k){
+		if(n<maxlimit)
 		mark[n]=n;
 		return n;
 	}	
 	else{
+		if(n<maxlimit)
 		mark[n]=k;
 		return k;
 	}
 
 }
 int main() {
-	int n;
+	long long n;
 	while(gi(n)!=EOF){
-		printf("%d\n",max(n));
+		printf("%lld\n",max(n));
 	}
 	return 0;
 }

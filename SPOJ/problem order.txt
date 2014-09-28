@@ -5,4 +5,8 @@ ACP10A   - sep 26 2014
 FASHION -  sep 26 2014
 AE00    - sep 26 2014
 CANDY3  - sep 26 2014
-COINS   - sep 26 2014
+COINS   - sep 27 2014
+EIGHTS - sep 27 2014
+HANGOVER - sep 27 2014
+PALIN - sep 27 2104
+INVCNT - sep 28 2014
